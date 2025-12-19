@@ -40,13 +40,6 @@ To maintain clarity in collaborative attribution, two versions of the design are
 - Post-layout critical path delay: **3.01 ns**
 - Transistor count: **2257**
 
-### Post-Course Individual Optimization by Chia-Hunag Chen
-
-- Post-layout critical path delay: **2.6 ns**
-- Transistor count: **~2500**
-- Achieved through additional buffer insertion and critical-path refinement
-- Performed independently after course completion
-
 ### Layout Result
 
 <p align="center">
@@ -74,4 +67,12 @@ To maintain clarity in collaborative attribution, two versions of the design are
 
 ---
 
+## Additional Optimization by Chia-Hunag Chen
+
+- Post-layout critical path delay: **2.6 ns**
+- Transistor count: **~2500**
+- Achieved through additional buffer insertion and critical-path refinement
+- Performed independently after course completion
+
+---
 
