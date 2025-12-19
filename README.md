@@ -6,11 +6,9 @@ The objective of this project is to design and optimize a **6-bit Multiplier and
 
 ## Architecture Overview
 
-<table>
 <p align="center">
   <img src="figures/architecture.png" width="600">
 </p>
-<table>
 
 The MAC adopts a hierarchical arithmetic structure including:
 
@@ -55,7 +53,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
   <img src="figures/layout_result.png" width="600">
 </p>
 
-- Area: 6406.45 $(\mu)m^2$
+- Area: 6406.45 $\mum^2$
 ---
 
 
