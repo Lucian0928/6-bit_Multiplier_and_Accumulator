@@ -6,9 +6,11 @@ The objective of this project is to design and optimize a **6-bit Multiplier and
 
 ## Architecture Overview
 
+<table>
 <p align="center">
   <img src="figures/architecture.png" width="600">
 </p>
+<table>
 
 The MAC adopts a hierarchical arithmetic structure including:
 
