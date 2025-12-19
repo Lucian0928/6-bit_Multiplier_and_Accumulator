@@ -37,7 +37,8 @@ To maintain clarity in collaborative attribution, two versions of the design are
 
 ### Course Final Submission
 
-- Post-layout critical path delay: **3.01 ns**
+- Pre-sim critical path delay: **1.17 ns**
+- Post-sim critical path delay: **3.01 ns**
 - Transistor count: **2257**
 
 ### Layout Result
