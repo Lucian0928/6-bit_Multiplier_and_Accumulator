@@ -53,7 +53,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
   <img src="figures/layout_result.png" width="600">
 </p>
 
-- Area: 6406.45 $\mu$$m^2$
+- Area: 6406.45 $($\mu$)m^2$
 ---
 
 
