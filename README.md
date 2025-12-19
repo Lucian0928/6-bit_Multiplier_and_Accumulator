@@ -1,68 +1,59 @@
-## Project Context
+## Design Objective
 
-- **Course**: VLSI Laboratory  
-- **Instructor**: Prof. Hsieh-Chia Chang  
-- **Timeframe**: Oct. 2024 – Jan. 2025  
-- **Collaboration**: Team-based course project with shared design responsibility
+The objective of this project is to design and optimize a **6-bit Multiplier and Accumulator (MAC)** using a full-custom VLSI design flow, with emphasis on **arithmetic architecture selection**, **pipeline placement**, and **post-layout timing behavior**.
 
 ---
 
 ## Architecture Overview
 
-The MAC architecture consists of:
+<p align="center">
+  <img src="figures/architecture.png" width="600">
+</p>
 
-- 6-bit Booth-encoded multiplier
-- Partial product reduction using CSA (Carry-Save Adders)
-- Final summation using CLA (Carry Lookahead Adder)
-- Accumulator for iterative addition
-- Hierarchical adder structure to reduce critical path delay
+The MAC adopts a hierarchical arithmetic structure including:
 
-This architecture balances **speed, area, and structural clarity**, and is suitable for layout-level optimization.
-
----
-
-## Design Methodology
-
-### 1. Arithmetic Architecture Selection
-- Booth encoding was adopted to reduce the number of partial products
-- CSA stages minimized carry propagation during partial product accumulation
-- CLA was used in the final stage to shorten the critical path
-
-### 2. Timing Optimization
-- Critical paths were identified through post-layout simulation
-- Pipeline restructuring and adder-level optimizations were applied
-- Buffer insertion was explored to reduce long interconnect delay
-
-### 3. Layout Considerations
-- Transistor sizing optimized to balance drive strength and parasitic loading
-- Routing symmetry was emphasized to improve post-layout timing accuracy
-- Parasitic capacitance and RC delay were explicitly considered
+- radix-4 booth encoder and selector
+- Carry-Save Adder tree and Ripple-Carry Adder for partial product reduction
+- Pipeline registers inserted at timing-critical boundaries
 
 ---
 
-## Performance Summary
+## Timing-Oriented Design Approach
 
-### Project Versions and Attribution
+Design decisions were guided by post-layout timing analysis:
 
-This repository contains **two distinct versions** of the design:
+- Booth encoding was selected to reduce multiplier depth
+- CSA stages minimized carry propagation delay
+- Pipeline cutsets were chosen based on extracted critical paths
+- Additional buffering was applied selectively to long interconnects
 
-### 1. Course Final Submission (Team Version)
-
-- **Post-layout critical path delay**: **3.01 ns**
-- **Transistor count**: **2257**
-- This version corresponds to the **official final submission** evaluated for course grading
-- This is the version referenced by team members who report course results
-
-### 2. Post-Course Individual Optimization (Author Only)
-
-- **Post-layout critical path delay**: **2.6 ns**
-- **Transistor count**: **~2500**
-- After the course concluded, additional pipeline restructuring and buffer insertion
-  were explored individually by the author
-- These optimizations were **not part of the original course submission**
-  and are included to demonstrate further timing optimization beyond course requirements
+This approach emphasizes **timing awareness at the architectural level**, which is central to high-performance digital IC design.
 
 ---
 
-## Repository Structure
+## Performance Summary and Attribution
+
+To maintain clarity in collaborative attribution, two versions of the design are documented.
+
+### Course Final Submission
+
+- Post-layout critical path delay: **3.01 ns**
+- Transistor count: **2257**
+
+### Post-Course Individual Optimization by Chia-Hunag Chen
+
+- Post-layout critical path delay: **2.6 ns**
+- Transistor count: **~2500**
+- Achieved through additional buffer insertion and critical-path refinement
+- Performed independently after course completion
+
+### Layout Result
+
+<p align="center">
+  <img src="figures/layout_result.png" width="600">
+</p>
+
+- Area: 6406.45 $(\mu)m^2$
+---
+
 
