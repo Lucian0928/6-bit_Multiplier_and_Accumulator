@@ -57,7 +57,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
   </tr>
   <tr>
     <td>
-      <img src="figures/pre.png" width="400">
+      <img src="figures/pre.png" width="350">
     </td>
     <td>
       <img src="figures/post.png" width="400">
