@@ -1,6 +1,6 @@
 ## Design Objective
 
-The objective of this project is to design and optimize a **6-bit Multiplier and Accumulator (MAC)** using a full-custom VLSI design flow, with emphasis on **arithmetic architecture selection**, **pipeline placement**, and **post-layout timing behavior**.
+This is a collaborative project and I completed this project with Yen-Yu Chen. The objective of this project is to design and optimize a **6-bit Multiplier and Accumulator (MAC)** using a full-custom VLSI design flow, with emphasis on **arithmetic architecture selection**, **pipeline placement**, and **post-layout timing behavior**.
 
 ---
 
@@ -49,7 +49,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
 
 - Area: 6406.45 $\mu m^2$
 
-### waveform
+### Waveform
 
 <table>
   <tr>
