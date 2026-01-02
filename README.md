@@ -12,7 +12,7 @@ This is a collaborative project and I completed this project with Yen-Yu Chen. T
 
 The MAC adopts a hierarchical arithmetic structure including:
 
-- radix-4 booth encoder and selector
+- Radix-4 booth encoder and selector
 - Carry-Save Adder tree and Ripple-Carry Adder for partial product reduction
 - Pipeline registers inserted at timing-critical boundaries
 
