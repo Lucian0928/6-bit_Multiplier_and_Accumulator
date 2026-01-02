@@ -1,3 +1,7 @@
+**Contributors**
+Lucian(Chia-Huang) Chen [https://github.com/Lucian0928]
+Audrey(Yen-Yu) Chen [https://github.com/audreyYYC]
+
 ## Design Objective
 
 This is a collaborative project and I completed this project with Yen-Yu Chen. The objective of this project is to design and optimize a **6-bit Multiplier and Accumulator (MAC)** using a full-custom VLSI design flow, with emphasis on **arithmetic architecture selection**, **pipeline placement**, and **post-layout timing behavior**.
