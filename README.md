@@ -43,7 +43,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
 
 - Pre-sim critical path delay: **1.17 ns**
 - Post-sim critical path delay: **3.01 ns**
-- Transistor count: **2257**
+- Transistor count: **2,257**
 
 ### Layout Result
 
@@ -51,7 +51,7 @@ To maintain clarity in collaborative attribution, two versions of the design are
   <img src="figures/layout_result.png" width="600">
 </p>
 
-- Area: 6406.45 $\mu m^2$
+- Area: 6,406.45 $\mu m^2$
 
 ### Waveform
 
